@@ -47,6 +47,13 @@ app.get("/api/ip/:ip", (req, res) => {
   });
 });
 
+// Añade esto después de tu ruta /api/ip/:ip
+app.get("/api/me", (req, res) => {
+  // Express obtiene la IP real en req.ip
+  const clientIp = req.headers["x-forwarded-for"] || req.socket.remoteAddress;
+  res.json({ ip: clientIp });
+});
+
 app.listen(PORT, () => {
   console.log(`🚀 API corriendo en http://localhost:${PORT}`);
 });
