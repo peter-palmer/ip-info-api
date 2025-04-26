@@ -59,17 +59,12 @@ Esta API ofrece un endpoint REST que, dado un parámetro IP, devuelve datos geog
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/TU_USUARIO/ip-info-api.git
+   git clone https://github.com/peter-palmer/ip-info-api.git
    cd ip-info-api
    ```
 2. Instala dependencias:
    ```bash
-   npm ci
-   ```
-3. (Opcional) Configura variables de entorno en `.env`:
-   ```ini
-   # Para servicios externos (si se usan)
-   IPINFO_TOKEN=tu_token_aqui
+   npm i
    ```
 
 ---
